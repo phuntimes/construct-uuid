@@ -1,6 +1,7 @@
 # construct-uuid
 
 [![Build Status](https://travis-ci.com/phuntimes/construct-uuid.svg?branch=master)](https://travis-ci.com/phuntimes/construct-uuid)
+[![Coverage Status](https://coveralls.io/repos/github/phuntimes/construct-uuid/badge.svg?branch=master)](https://coveralls.io/github/phuntimes/construct-uuid?branch=master)
 
 An extension library for [construct] defining an `Adapter` for the `UUID` class.
 
