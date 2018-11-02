@@ -1,4 +1,4 @@
-# uuidapter
+# construct-uuid
 
 [![Build Status](https://travis-ci.com/phuntimes/construct-uuid.svg?branch=master)](https://travis-ci.com/phuntimes/construct-uuid)
 
