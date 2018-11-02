@@ -76,7 +76,7 @@ setup(
     description="UUID adapter for Construct",
     classifiers=classifiers,
     install_requires=install_requirements,
-    # setup_requires=setup_requirements
+    setup_requires=setup_requirements,
     tests_require=test_requirements,
     # extras_require=extra_requirements
 )
