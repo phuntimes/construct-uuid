@@ -5,13 +5,16 @@ from enum import Enum
 from setuptools import setup, find_packages
 
 
-version = "0.1.2"
+version = "0.1.3"
 
 
 packages = find_packages(
     where="src",
     include=["uuidadapter"]
 )
+
+
+package_dir = {'': 'src'}
 
 
 # package_data = {}
@@ -65,6 +68,7 @@ setup(
     name="construct-uuid",
     version=version,
     packages=packages,
+    package_dir=package_dir,
     url="https://github.com/phuntimes/construct-uuid",
     license="MIT License",
     author="Sean McVeigh",

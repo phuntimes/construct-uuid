@@ -1,5 +1,7 @@
 # uuidapter
 
+[![Build Status](https://travis-ci.com/phuntimes/construct-uuid.svg?branch=master)](https://travis-ci.com/phuntimes/construct-uuid)
+
 An extension library for [construct] defining an `Adapter` for the `UUID` class.
 
 ## Usage
