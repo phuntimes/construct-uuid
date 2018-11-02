@@ -72,7 +72,7 @@ setup(
     url="https://github.com/phuntimes/construct-uuid",
     license="MIT License",
     author="Sean McVeigh",
-    author_email="smcveigh@gmail.com",
+    author_email="spmcveigh@gmail.com",
     description="UUID adapter for Construct",
     classifiers=classifiers,
     install_requires=install_requirements,
