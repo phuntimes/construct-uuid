@@ -4,7 +4,7 @@
 import pytest
 
 from uuid import UUID
-from uuidadapter import UUIDAdapter
+from uuidstruct import UUIDAdapter
 
 
 @pytest.fixture
@@ -14,9 +14,9 @@ def adapter(swapped: bool):
 
 def test_parse(buffer: bytes, instance: UUID, adapter: UUIDAdapter):
     result = adapter.parse(buffer)
-    assert instance == result
+    assert result == instance
 
 
 def test_build(instance: UUID, buffer: bytes, adapter: UUIDAdapter):
     result = adapter.build(instance)
-    assert buffer == result
+    assert result == buffer

@@ -1,13 +1,28 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+"""
+This module defines an :class:`Adapter` subclass :class:`UUIDAdapter` for
+representing a :class:`UUID` assuming an unsigned 128-bit integer
+representation.
+
+Encoding and decoding is passed to an underlying :class:`BytesInteger`
+:class:`Subconstruct` whose parameters are set during :class:`UUIDAdapter`'s
+construction. Explicitly, these parameters are restricted to a boolean defining
+the endianness of the integer.
+"""
+
+__all__ = ['UUIDAdapter']
+__version__ = '0.1.5'
+__author__ = 'Sean McVeigh'
+
 from uuid import UUID
 from construct import BytesInteger, Adapter, Subconstruct, Path
 
 
 class UUIDAdapter(Adapter):
     """
-    Adapter for :class:`UUID` from an unsigned 128 bit integer.
+    Adapter for :class:`UUID` from an unsigned 128-bit integer.
     """
 
     def __init__(self, swapped: bool=False):
@@ -28,7 +43,7 @@ class UUIDAdapter(Adapter):
         :param context: wrapper
         :return: buffer
         """
-        return obj.int
+        return int(obj)
 
     def _decode(self, obj: int, context: Subconstruct, path: Path) -> UUID:
         """
