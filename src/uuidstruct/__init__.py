@@ -8,7 +8,7 @@ representation.
 """
 
 __all__ = ['UUIDAdapter']
-__version__ = '0.2.1'
+__version__ = '0.2.2'
 __author__ = 'Sean McVeigh'
 
 from .uuidadapter import UUIDAdapter
