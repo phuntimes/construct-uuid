@@ -43,10 +43,10 @@ def adapter(subcon: Construct, decoder: Decoder, encoder: Encoder) -> Adapter:
 
 
 def test_parse(buffer: bytes, adapter: Adapter, instance: UUID):
-    result = adapter.parse(buffer)
-    assert instance == result
+    actual = adapter.parse(buffer)
+    assert actual == instance
 
 
 def test_build(instance: UUID, adapter: Adapter, buffer: bytes):
-    result = adapter.build(instance)
-    assert buffer == result
+    actual = adapter.build(instance)
+    assert actual == buffer

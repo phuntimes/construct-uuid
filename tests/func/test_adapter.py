@@ -13,10 +13,10 @@ def adapter(swapped: bool):
 
 
 def test_parse(buffer: bytes, instance: UUID, adapter: UUIDAdapter):
-    result = adapter.parse(buffer)
-    assert result == instance
+    actual = adapter.parse(buffer)
+    assert actual == instance
 
 
 def test_build(instance: UUID, buffer: bytes, adapter: UUIDAdapter):
-    result = adapter.build(instance)
-    assert result == buffer
+    actual = adapter.build(instance)
+    assert actual == buffer

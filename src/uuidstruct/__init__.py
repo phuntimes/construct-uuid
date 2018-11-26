@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
 """
 This package provides an :class:`Adapter<construct.Adapter>` for
 :class:`UUID<uuid.UUID>` instances utilizing unsigned 128-bit integer
