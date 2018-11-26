@@ -12,7 +12,7 @@ Intended to be consistent with the `Adapter` API:
 ```python
 
 from construct import Struct
-from uuidadapter import UUIDAdapter
+from uuidstruct import UUIDAdapter
 
 
 STRUCT = Struct(
