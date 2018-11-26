@@ -13,7 +13,7 @@ the endianness of the integer.
 """
 
 __all__ = ['UUIDAdapter']
-__version__ = '0.2.0'
+__version__ = '0.2.1'
 __author__ = 'Sean McVeigh'
 
 from uuid import UUID
